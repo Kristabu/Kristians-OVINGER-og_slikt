@@ -17,6 +17,7 @@ def maxOfTwo(a, b):
         print("B is greater than or equal to A")
     return b
 */
+
 int a = 1;
 int b = 0;
 
