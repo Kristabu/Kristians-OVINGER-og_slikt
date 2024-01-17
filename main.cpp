@@ -31,7 +31,7 @@ int maxof2(int a, int b){
 }
 
 //------------------------------------------------------------------------------
-//oppgave c
+//oppgave c)
 /*
 def fibonacci(n):
     a = 0
@@ -61,7 +61,7 @@ int fibonacci(int n){
 }
 
 //------------------------------------------------------------------------------
-//oppgave d
+//oppgave d)
 /*
 def squareNumberSum(n):
     totalSum = 0
@@ -83,7 +83,7 @@ int squareNumberSum(int n){
 }
 
 //------------------------------------------------------------------------------
-//oppgave e
+//oppgave e)
 /*
 def triangleNumbersBelow(n):
     acc = 1
@@ -115,10 +115,63 @@ skrive til standardutgangen (for eksempel terminalvinduet).
 */
 
 //------------------------------------------------------------------------------
-//oppgave f
+//oppgave f)
 
+/*
+def isPrime(n):
+    for j in range(2,n):
+        if n%j == 0:
+            return False
+    return True
 
+*/
 
+bool isPrime(int n){
+    for (int j = 2; j < n; ++j){
+        if ((n%j) == 0){
+            return false;
+        } 
+    }
+    return true;
+}
+
+//------------------------------------------------------------------------------
+//oppgave g)
+/*
+def naivePrimeNumberSearch(n):
+    for number in range(2, n):
+        if isPrime(number):
+            print(number, "is a prime")
+
+*/
+
+void naivePrimeNumberSearch(int n){
+    for(int number = 2; number < n; ++number){
+        if (isPrime(number)){
+            cout << number << " is a prime" << endl;
+        }           
+    }
+}
+
+//------------------------------------------------------------------------------
+//oppgave h)
+
+/*
+def inputAndPrintNameAndAge():
+    name = input("Skriv inn et navn: ")
+    age = input("Skriv inn alderen til " + name + ": ")
+    print(name + " er " + age + " aar gammel.")
+*/
+
+void inputAndPrintNameAndAge(){
+    string name;
+    string age;  
+    cout << "Skriv inn et navn: " << endl;
+        cin >> name;
+    cout << "Skriv inn alderen til " << name << ": ";
+        cin >> age;
+    cout << name << " er " << age << " aar gammel.";
+}
 
 //------------------------------------------------------------------------------
 //oppgave b
@@ -140,7 +193,11 @@ int main() {
     cout << "Oppgave e)" << endl;
     triangleNumbersBelow(10);
 
+    cout << "Oppgave f) og g)" << endl;
+    naivePrimeNumberSearch(14);
+
+    cout << "Oppgave h)" << endl;
+    inputAndPrintNameAndAge();
+
     return 0;
 }
-
-
