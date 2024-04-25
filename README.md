@@ -1,2 +1,2 @@
 # Kristians-OVINGER-og_slikt
-Litt oblig da
+Litt av hvert
