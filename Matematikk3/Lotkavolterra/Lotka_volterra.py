@@ -45,14 +45,14 @@ ax.plot_surface(X, Y, Z, vmin=Z.min() * 2, cmap=cm.Blues)
 ax.set(xticklabels=[],
        yticklabels=[],
        zticklabels=[])
-plt.savefig("lotkavolterra-1")
+plt.savefig("Matematikk3/Lotkavolterra/lotkavolterra-1")
 
 #plotte nivÃ¥kurver til lotkavolterrafunksjon
 fig, ax = plt.subplots()
 CS = ax.contour(X, Y, Z)
 ax.clabel(CS, inline=True, fontsize=10)
 ax.set_title('Simplest default with labels')
-plt.savefig("lotkavolterra-2")
+plt.savefig("Matematikk3/Lotkavolterra/lotkavolterra-2")
 
 
 #plotte vektorfeltet
@@ -63,20 +63,20 @@ ax.yaxis.set_ticks([])
 ax.axis([0, 3, 0, 3])
 ax.set_aspect('equal')
 plt.plot(x,y)
-plt.savefig("lotkavolterra-3")
+plt.savefig("Matematikk3/Lotkavolterra/lotkavolterra-3")
 
 #bestander mot tid
 plt.figure()
 plt.plot(t,x)    
 plt.plot(t,y)
-plt.savefig('lotkavolterra-tid.png')
+plt.savefig('Matematikk3/Lotkavolterra/lotkavolterra-tid.png')
 
 #fÃ¸rsteintegral mot tid
 plt.figure()
 plt.plot(t,f)    
-plt.savefig('lotkavolterra-integral.png')
+plt.savefig('Matematikk3/Lotkavolterra/lotkavolterra-integral.png')
 
 #bestander mot hverandre
 plt.figure()
 plt.plot(x,y)
-plt.savefig('lotkavolterra-fase.png')
+plt.savefig('Matematikk3/Lotkavolterra/lotkavolterra-fase.png')
