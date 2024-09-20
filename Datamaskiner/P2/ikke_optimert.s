@@ -3,18 +3,19 @@
 #output a0 og a1
 
 #initialiser verdier
-#li a0 17 #input, a0 og a1 er outputs
+#li a0 19 #input, a0 og a1 er outputs
 li a3 0 #sammenligner 
 li s2 2 #divider
 li s3 1 #startverdi loop
 add a4 a4 a0 #mellomlagring av A
+beq a0 s2 Slutt
 div a5 a4 s2 #teller a5 (A/2)
-li a0 0
+sub a0 a0 a0
 #for loop der i er a5
 
 Div:
     #Deler
-    #a5 er høyeste resultat
+    #a5 er h?yeste resultat
     div a7 a4 a5 #div produkt
     mul a3 a7 a5
     beq a3 a4 store_value
@@ -43,7 +44,7 @@ Kvadrattall:
 
 Primtall: 
     bne a0 x0 Slutt
-    li a0 0
+    li a0 1
     li a1 0
 Slutt:
     nop
