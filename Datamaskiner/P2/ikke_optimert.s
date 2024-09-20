@@ -3,7 +3,7 @@
 #output a0 og a1
 
 #initialiser verdier
-li a0 17 #input, a0 og a1 er outputs
+#li a0 17 #input, a0 og a1 er outputs
 li a3 0 #sammenligner 
 li s2 2 #divider
 li s3 1 #startverdi loop
@@ -14,7 +14,7 @@ li a0 0
 
 Div:
     #Deler
-    #a5 er hï¿½yeste resultat
+    #a5 er høyeste resultat
     div a7 a4 a5 #div produkt
     mul a3 a7 a5
     beq a3 a4 store_value
